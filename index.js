@@ -1,6 +1,5 @@
 function checkForValidity(){
 	var site = getParameterByName('NewsInput');
-	console.log(site);
 	var signature = site.substring(site.indexOf("."), site.indexOf(".") + 4);
 	var finalMessage;
 	if(signature === '.gov' || signature === '.org' || signature === '.edu') {
@@ -8,6 +7,7 @@ function checkForValidity(){
 	}else{
 		finalMessage = "Oh no! You might want to get your information somewhere else. This website,  " + site + ", may not be the most trustworthy."
 	}
+	console.log(signature);
 	document.getElementById("result").innerHTML = finalMessage;
 }
 function getParameterByName(name, url = window.location.href) {
