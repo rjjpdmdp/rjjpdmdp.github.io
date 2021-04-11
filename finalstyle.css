@@ -1,0 +1,525 @@
+
+#background2{
+	background-color:#f5f5dc;
+}
+
+#button1 {
+  font-family: lato;
+  width: 40%;
+  margin-left:30%;
+  margin-right:30%;
+  background:#FF8B71;
+  border-radius:5px;
+  border: 5px solid white;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:15px;
+  padding-bottom:15px;
+  margin-top:-4px;
+  font-weight:700;
+  text-align: center;
+  animation: button 6s;
+}
+#button1:hover { background:#FF0000; }
+
+/* the source I used to help me create the hover effect seen above is the following: https://www.w3schools.com/cssref/sel_hover.asp */
+
+@keyframes button {
+	0% {
+		opacity: 0%
+	}
+	50% {
+		opacity: 00%
+	}
+	75% {
+		opacity: 50%
+	}
+	100% {
+		opacity: 100%
+	}
+}
+
+/* this is one of the examples of the CSS3 concepts I've integrated throughout my website -- to create this particular animation, I used the help of the following website:
+https://www.w3schools.com/css/css3_animations.asp
+*/
+
+a{
+	text-decoration: none;
+	transition: all 1s;
+	color: white;
+}
+
+/* I used the following source to learn about the text-decoration: https://www.w3schools.com/css/css_link.asp */
+
+#navheader {
+	display: flex;
+  justify-content: center;
+	align-items: center;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-right: 70px;
+	padding-left: 70px;
+	background-image: linear-gradient(to right, #55CAF4, #0F9BCD);
+	font-family: Courier New;
+	margin-top:-10px;
+	margin-right:-8px;
+	margin-left:-8px;
+}
+
+#img2 {
+	transition:1s;
+	height: 120px;
+	cursor: pointer;
+	margin-top: 5px;
+}
+
+#navigation{
+	list-style: none;
+}
+
+#navigation li{
+	display: inline-block;
+	text-transform: uppercase;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition: all 1s;
+	color: white;
+}
+
+#navigation li a:hover{
+	color: orange;
+}
+
+#btn {
+	color: white;
+	font-size: 15px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	border-radius: 5px;
+	background-color: #F4886F;
+	margin-left: 45px;
+}
+
+#btn:hover {
+	background-color:orange;
+}
+
+/* to help me create the formatting for the navigation bar, I utilized the following source: https://www.youtube.com/watch?v=zH9vCO_zyTQ. However, the video didn't include all of the featurs seen in my navigation bar, and so the rest was done without any major help.*/
+
+#register {
+	margin:0;
+	padding:0;
+	font-family: lato;
+	background-image: linear-gradient(125deg, #EE7552, #E73C7E, #23A6D5, #23D5AB);
+	background-size: 1000% 1000%;
+	background-repeat: no-repeat;
+	animation: contact 5s infinite
+	}
+
+/* the source that I used to help me create the code seen above is the following: https://www.youtube.com/watch?v=fBRzD6dwJfw */
+	
+@keyframes contact {
+	0% {
+		background-position: 0% 50%;
+	}
+	40%{
+		background-position: 100% 50%;
+	}
+	100%{
+		background-position: 0% 50%;
+	}
+}
+
+#register2 {
+	border: 4px solid white;
+	border-radius: 5px;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:10px;
+	color:white;
+
+}
+
+#form {
+	font-family: Courier New;
+	color:white;
+	margin-bottom: 15px;
+	transition: all 0.7s;
+	border-radius: 5px;
+	padding: 13px;
+	box-sizing: border-box;
+	width:100%;
+	background-color: transparent;
+	font-size: 18px;
+	border:5px solid white;
+}
+
+#form2 {
+	font-family: Courier New;
+	color:white;
+	margin-bottom: 15px;
+	transition: all 0.7s;
+	border-radius: 5px;
+	padding: 13px;
+	box-sizing: border-box;
+	width:100%;
+	background-color: transparent;
+	font-size: 18px;
+	border:5px solid white;
+}
+
+::placeholder {
+	color:white;
+}
+
+/* to learn how to format this placeholder, i used the help of this resource: https://css-tricks.com/almanac/selectors/p/placeholder/ */
+
+#submit {
+  font-family: Courier New;
+  width: 100%;
+  background:#FF8B71;
+  border-radius:5px;
+  border: 5px solid white;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:15px;
+  padding-bottom:15px;
+  transition: all 0.7s;
+  font-weight:700;
+}
+
+#submit:hover {background:#FF0000;}
+
+#reset {
+  font-family: Courier New;
+  width: 100%;
+  background:#FF8B71;
+  border-radius:5px;
+  border: 5px solid white;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:15px;
+  padding-bottom:15px;
+  transition: all 0.7s;
+  font-weight:700;
+  margin-top:15px;
+}
+
+#reset:hover {background:#FF0000;}
+
+
+#gif1 {
+	border-radius:20px;
+	margin-top:25px;
+ animation-name: gif1;
+ animation-delay:-1.5s;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+ }	
+
+@keyframes gif1 {
+  0%   {left:-4000px;}
+  100% {left:60px;}
+}
+
+  
+ #gif2 {
+	width:480px;
+	height:480px;
+	border-radius:20px;
+	margin-top:25px;
+	animation-name: gif2;
+ animation-delay:-0.5s;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+ }	
+ 
+ @keyframes gif2 {
+  0%   {background-color:red; left:-1000px;}
+  25%  {background-color:yellow; left:-1000px;}
+  50%  {background-color:blue; left:-1000px;}
+  75% {background-color:blue; left:-1000px;}
+  100% {background-color:red; left:-420px;}
+}
+
+
+#spangetext {
+	width:350px;
+	height:100px;
+	animation-name: spangetext;
+	animation-delay:-0.3s;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+ margin-bottom:200px;
+}
+
+ @keyframes spangetext {
+  0%   {left:-1500px;}
+  25%  {left:-1500px;}
+  50%  {left:-1500px;}
+  75% {left:-1500px;}
+  85%  {left:-1500px;}
+  100% {left:-380px;}
+ }
+
+h3 {
+	font-family: lato;
+	width:90%;
+	border: 3px solid black;
+	margin-left:55px;
+	margin-top: 10px;
+	padding:10px;
+	text-align: center;
+	letter-spacing: 2px;
+	animation-name: general;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+  font-size: 15px;
+
+}
+
+
+@keyframes general {
+	0% {
+		opacity: 0%
+	}
+	50% {
+		opacity: 0%
+	}
+	90% {
+		opacity: 0%
+	}
+	100% {
+		opacity:100%
+	}
+}
+
+#mission {
+	font-family: lato;
+	width:90%;
+	border: 3px solid black;
+	margin-left:55px;
+	margin-top: 10px;
+	padding:10px;
+	text-align: center;
+	letter-spacing: 2px;
+	animation-name: general;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+}
+
+@keyframes general {
+	0% {
+		opacity: 0%
+	}
+	50% {
+		opacity: 0%
+	}
+	90% {
+		opacity: 0%
+	}
+	100% {
+		opacity:100%
+	}
+}
+
+#box {
+	background-image: linear-gradient(#DC143C, #FA8072);
+	animation-name: general;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+ border: 4px solid black;
+}
+
+#disclaimer {
+	font-family: Courier New;
+	letter-spacing: 2px;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	animation-name: general;
+  animation-duration: 4s;
+ position: relative;
+ animation-fill-mode: forwards;
+}
+
+
+#navheader2 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:10px;
+	padding-bottom: 10px;
+	padding-right: 70px;
+	padding-left: 70px;
+background-color: transparent;
+	font-family: Courier New;
+	margin-top:-10px;
+}
+
+#producttop {
+	border: 3px solid black;
+	color: black;
+	width:90%;
+	font-family: Courier New;
+	padding: 10px;
+	text-align: center;
+	margin-left: 58px;
+	margin-top: 30px;
+}
+
+#product {
+	border: 2px solid black;
+	max-width: 25%;
+	float: left;
+	text-align: center;
+	font-family: Courier New;
+	box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.6);
+	border-radius:20px;
+	padding: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 40px;
+	margin-top:40px;
+	animation-name: general2;
+	animation-duration: 4s;
+	position: relative;
+	animation-fill-mode: forwards;
+}
+
+@keyframes general2 {
+	0% {
+		opacity: 0%
+	}
+	50% {
+		opacity: 30%
+	}
+	90% {
+		opacity: 90%
+	}
+	100% {
+		opacity:100%
+	}
+}
+
+#productp {
+	width:360px;
+	height:300px;
+	border-radius:20px;
+padding-top:10px;
+}
+
+.price_product {
+	 color: grey;
+  font-size: 22px;
+}
+
+.product_text {
+	font-size:15px;
+}
+
+.button {
+  border-radius:20px;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #0F9BCD;
+  text-align: center;
+  cursor: pointer;
+  width: 360px;
+  font-size: 18px;
+  font-family: Courier New;
+  
+}
+
+.button:hover {
+	background-color: #55CAF4;
+}
+
+
+#scratchout {
+	margin-right: 10px;
+}
+
+
+
+#form_purchase {
+	font-family: Courier New;
+	text-align: center;
+}
+
+
+
+.fieldset1 {
+	margin-right:15px;
+	margin-left:15px;
+	border:5px solid #05386B;
+}
+
+	
+.firstpart {
+	border-radius: 7px;
+	text-align: center;
+	font-family: Courier New;
+}
+
+
+
+.submitreset {
+	font-family: Courier New;
+	width: 70px;
+	height:40px;
+	border-radius:7px;
+}
+
+
+
+#contact_form {
+	font-family: Courier New;
+	color:white;
+	margin-bottom: 15px;
+	transition: all 0.7s;
+	border-radius: 5px;
+	padding: 13px;
+	box-sizing: border-box;
+	width:100%;
+	background-color: transparent;
+	font-size: 18px;
+	border:5px solid white;
+}
+
+.style {
+	font-family: Candara;
+	width:90%;
+	border: 3px solid black;
+	margin-left:65px;
+	margin-top: 10px;
+	padding:10px;
+	text-align: center;
+	letter-spacing: 2px;
+	animation-name: general;
+  animation-duration: 2s;
+ position: relative;
+ animation-fill-mode: forwards;
+  font-size: 25px;
+	background-image: linear-gradient(to right, #55CAF4, #0F9BCD);
+
+}
+
+#background1 {
+	margin:0;
+	padding:0;
+	font-family: lato;
