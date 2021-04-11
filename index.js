@@ -1,7 +1,7 @@
 function checkForValidity(){
 	var site = getParameterByName('NewsInput');
 	console.log(site);
-	var signature = site.substring(site.length-4);
+	var signature = site.substring(site.indexOf("."), site.indexOf(".") + 5);
 	var finalMessage;
 	if(signature === '.gov' || signature === '.org' || signature === '.edu') {
 		finalMessage = "Amazing! This website, " + site + ", is trustworthy.";
