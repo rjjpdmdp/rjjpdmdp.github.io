@@ -4,9 +4,9 @@ function checkForValidity(){
 	var signature = site.substring(site.length-4);
 	var finalMessage;
 	if(signature === '.gov' || signature === '.org' || signature === '.edu') {
-		finalMessage = "Amazing! This website is trustworthy.";
+		finalMessage = "Amazing! This website, " + site + ", is trustworthy.";
 	}else{
-		finalMessage = "Oh no! You might want to get your information somewhere else. This website may not be the most trustworthy."
+		finalMessage = "Oh no! You might want to get your information somewhere else. This website,  " + site + ", may not be the most trustworthy."
 	}
 	document.getElementById("result").innerHTML = finalMessage;
 }
